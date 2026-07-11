@@ -1,0 +1,283 @@
+.main {
+  padding-top: 160px;
+  padding-bottom: 80px;
+  min-height: 100vh;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.title {
+  font-family: var(--font-headline);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  background: var(--gradient-brand);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 64px;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+}
+
+.subtitle {
+  font-size: 16px;
+  color: var(--color-on-surface-variant);
+  max-width: 672px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+  .subtitle {
+    font-size: 18px;
+  }
+}
+
+/* Pricing Grid */
+.cardsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  margin-bottom: 128px;
+  align-items: end;
+}
+
+@media (min-width: 768px) {
+  .cardsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  background: rgba(23, 30, 55, 0.6);
+  backdrop-filter: blur(20px);
+  border: 0.5px solid rgba(255, 255, 255, 0.15);
+  border-radius: var(--border-radius-lg);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.card:hover {
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.4);
+}
+
+.popularCard {
+  background: var(--color-surface);
+  border: 1px solid var(--color-tertiary-container);
+  box-shadow: 0 40px 100px rgba(167, 169, 255, 0.15);
+}
+
+@media (min-width: 768px) {
+  .popularCard {
+    transform: scale(1.05);
+    z-index: 10;
+  }
+}
+
+.popularBadge {
+  position: absolute;
+  top: -14px;
+  right: 40px;
+  background: var(--color-tertiary);
+  color: var(--color-on-tertiary);
+  padding: 6px 12px;
+  border-radius: var(--border-radius-full);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.tier {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  margin-bottom: 16px;
+}
+
+.popularCard .tier {
+  color: var(--color-tertiary);
+}
+
+.cardName {
+  font-family: var(--font-headline);
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--color-on-surface);
+  margin-bottom: 8px;
+}
+
+.priceContainer {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  margin-bottom: 32px;
+}
+
+.price {
+  font-family: var(--font-headline);
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--color-on-surface);
+}
+
+.period {
+  font-size: 14px;
+  color: var(--color-on-surface-variant);
+}
+
+.featuresList {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.featureItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--color-on-surface-variant);
+  font-size: 15px;
+}
+
+.popularCard .featureItem {
+  color: var(--color-on-surface);
+}
+
+/* Table Comparison Section */
+.comparisonSection {
+  margin-bottom: 128px;
+}
+
+.comparisonHeader {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.comparisonTitle {
+  font-family: var(--font-headline);
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--color-on-surface);
+  margin-bottom: 16px;
+}
+
+.comparisonSubtitle {
+  font-size: 16px;
+  color: var(--color-on-surface-variant);
+}
+
+.tableWrapper {
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  border: 0.5px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.4);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 15px;
+}
+
+.table th {
+  background: var(--color-surface-container-highest);
+  padding: 24px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-on-surface);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.table td {
+  padding: 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.table th:not(:first-child),
+.table td:not(:first-child) {
+  text-align: center;
+}
+
+.evenRow {
+  background: #1C2541;
+}
+
+.oddRow {
+  background: #0B132B;
+}
+
+.popularCol {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.highlightedText {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+/* Custom Solution Callout */
+.callout {
+  margin-bottom: 80px;
+}
+
+.calloutInner {
+  padding: 48px;
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  border-color: rgba(120, 220, 218, 0.2);
+}
+
+@media (min-width: 768px) {
+  .calloutInner {
+    flex-direction: row;
+    text-align: left;
+  }
+}
+
+.calloutText {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .calloutText {
+    text-align: left;
+  }
+}
+
+.calloutTitle {
+  font-family: var(--font-headline);
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--color-on-surface);
+  margin-bottom: 8px;
+}
+
+.calloutDesc {
+  color: var(--color-on-surface-variant);
+  font-size: 15px;
+}

@@ -1,0 +1,141 @@
+.navbar {
+  position: fixed;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: var(--container-max);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 48px;
+  border-radius: var(--border-radius-full);
+  background: rgba(10, 18, 42, 0.7);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 0.5px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+  padding: 10px 48px;
+  background: rgba(10, 18, 42, 0.9);
+}
+
+.brandWrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.brand {
+  font-family: var(--font-headline);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-on-surface);
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.link {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--color-on-surface-variant);
+  transition: color 0.3s ease;
+  text-transform: uppercase;
+}
+
+.link:hover {
+  color: var(--color-primary);
+}
+
+.link.active {
+  color: var(--color-primary);
+  border-bottom: 2px solid var(--color-primary);
+  padding-bottom: 2px;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.bar {
+  width: 22px;
+  height: 2px;
+  background: var(--color-on-surface);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    padding: 14px 24px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .links {
+    display: none;
+    position: absolute;
+    top: calc(100% + 12px);
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    gap: 0;
+    background: rgba(10, 18, 42, 0.98);
+    backdrop-filter: blur(30px);
+    border: 0.5px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+  }
+
+  .links.open {
+    display: flex;
+  }
+
+  .link {
+    padding: 14px 16px;
+    border-radius: 8px;
+    font-size: 12px;
+  }
+
+  .link:hover {
+    background: rgba(255,255,255,0.05);
+  }
+
+  .link.active {
+    border-bottom: none;
+    background: rgba(120, 220, 218, 0.1);
+    padding-bottom: 14px;
+  }
+
+  .navbar > .btn-primary {
+    display: none;
+  }
+}
