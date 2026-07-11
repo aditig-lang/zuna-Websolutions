@@ -5,7 +5,7 @@ const CONTACT = {
   founder: 'Aditi Gupta',
   phone: '+91 9279196754',
   email: 'zunawebsolutions@gmail.com',
-  address: 'Lanka, Varanasi, 221005, Uttar Pradesh, India',
+  address: 'Lanka, Varanasi, Pin code:221005, Uttar Pradesh, India',
 }
 
 export default function Footer() {
