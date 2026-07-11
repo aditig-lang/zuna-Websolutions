@@ -2,10 +2,10 @@ import { Link } from 'react-router-dom'
 import styles from './Footer.module.css'
 
 const CONTACT = {
-  Founder: 'Aditi Gupta',
-  Phone: '9279196754', 
-  Email: 'zunawebsolutions@gmail.com',
-  Address: 'Lanka, Varanasi, Pin code:221005, Uttar Pradesh, India',
+  founder: 'Aditi Gupta',
+  phone: '9279196754', 
+  email: 'zunawebsolutions@gmail.com',
+  address: 'Lanka, Varanasi, Pin code:221005, Uttar Pradesh, India',
 }
 
 export default function Footer() {
