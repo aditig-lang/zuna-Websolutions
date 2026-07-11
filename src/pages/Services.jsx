@@ -3,7 +3,7 @@ import styles from './Services.module.css'
 
 const CORE_SERVICES = [
   {
-    id: 'bespoke',
+    id: 'Website',
     title: 'Bespoke Web Development',
     subtitle: 'Lightning Fast React & Vite Engines',
     desc: 'We engineer custom web platforms tailored specifically for local businesses, manufacturing hubs, and corporate offices in Indian Tier 2 cities like Varanasi, Lucknow, and Patna. Standard templates slow down your site; our custom-code React projects load instantly even on standard mobile networks.',
@@ -27,7 +27,7 @@ const CORE_SERVICES = [
     highlights: ['Custom Logo & Identity Design', 'Social Media Asset Packages', 'Brand Consistency Guidelines']
   },
   {
-    id: 'uiux',
+    id: 'ui/ux',
     title: 'UI/UX Design Strategy',
     subtitle: 'Human-Centered Digital Layouts',
     desc: 'A premium product needs premium design. We design responsive, interactive interfaces utilizing glassmorphism and modern geometric grids that make visitors go "WOW" at first glance.',

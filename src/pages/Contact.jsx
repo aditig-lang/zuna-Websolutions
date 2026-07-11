@@ -2,10 +2,10 @@ import { useState } from 'react'
 import styles from './Contact.module.css'
 
 const CONTACT_INFO = {
-  founder: 'Aditi Gupta',
-  phone: '+91 9279196754',
-  email: 'zunawebsolutions@gmail.com',
-  address: 'Lanka, Varanasi, Pin code:221005, Uttar Pradesh, India',
+  Founder: 'Aditi Gupta',
+  Phone: '+91 9279196754',
+  Email: 'zunawebsolutions@gmail.com',
+  Address: 'Lanka, Varanasi, Pin code:221005, Uttar Pradesh, India',
 }
 
 export default function Contact() {
