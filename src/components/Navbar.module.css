@@ -134,8 +134,4 @@
     background: rgba(120, 220, 218, 0.1);
     padding-bottom: 14px;
   }
-
-  .navbar > .btn-primary {
-    display: none;
-  }
 }
