@@ -44,9 +44,6 @@ export default function Navbar() {
           </Link>
         ))}
       </div>
-      <Link to="/contact" className="btn-primary" style={{ fontSize: '11px', letterSpacing: '0.1em', padding: '10px 18px' }}>
-        Get a Quote
-      </Link>
 
       <button className={styles.hamburger} onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu">
         <span className={`${styles.bar} ${menuOpen ? styles.barTop : ''}`}></span>
