@@ -3,9 +3,9 @@ import styles from './Contact.module.css'
 
 const CONTACT_INFO = {
   founder: 'Aditi Gupta',
-  phone: '9279196754',
+  phone: '+91 9279196754',
   email: 'zunawebsolutions@gmail.com',
-  address: 'Varanasi, Uttar Pradesh, India',
+  address: 'Lanka, Varanasi, 221005, Uttar Pradesh, India',
 }
 
 export default function Contact() {
