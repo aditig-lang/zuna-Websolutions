@@ -44,19 +44,13 @@ The API starts at: **http://localhost:8080**
 | `GET` | `/api/services` | List all services |
 | `POST` | `/api/contact` | Submit a contact inquiry |
 
-### Contact Form Body (POST /api/contact)
-```json
-{
-  "name": "Rahul Sharma",
-  "email": "rahul@example.com",
-  "service": "Bespoke Development",
-  "message": "I need a website for my business in Lucknow."
-}
 
 ---
-## Project Structure
 
-text```
+
+
+## Project Structure
+```text
 backend/
 ├── pom.xml
 ├── .gitignore
