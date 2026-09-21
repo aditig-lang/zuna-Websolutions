@@ -1,68 +1,49 @@
-# Zuna Websolutions
-
-**Zuna Websolutions** is a modern web application built using **React**, **Next.js**, and **Vite**, featuring styled components with **Tailwind CSS** and efficient code quality tooling using **Oxlint** and **ESLint**.
+**Zuna Websolutions** is a modern, startup-style web development project engineered to deliver responsive, high-performance, and user-centric digital solutions for businesses. Focused on scalable design, clean code architecture, and practical web technologies.
 
 ---
 
-## 🚀 Features
+## ✨ Key Features
 
-- **High-Performance Development**: Fast module replacement and building powered by Vite and Next.js.
-- **Modern UI Styling**: Responsive, flexible components styled using Tailwind CSS.
-- **Optimized Quality & Linting**: Super-fast static code analysis using Oxlint alongside ESLint.
-- **TypeScript Support**: Strong typing for reliable application development.
+- **Modern UI & Responsive Design:** Crafted with [Tailwind CSS](https://tailwindcss.com/) to ensure seamless adaptability across mobile, tablet, and desktop viewports.
+- **High-Performance Development:** Accelerated build times and lightning-fast Hot Module Replacement (HMR) powered by Vite and Next.js.
+- **Robust Code Quality:** Integrated static code analysis using **Oxlint** alongside **ESLint** for superior performance and error prevention.
+- **Full-Stack Capability:** Includes structured backend integration to support dynamic client requirements.
+- **TypeScript Support:** Strongly-typed components and application logic for enhanced maintainability.
 
 ---
-
-## 📁 Repository Structure
+### 📁 Repository Structure
 
 ```text
 zuna-Websolutions/
 ├── .next/              # Next.js build output
-├── public/             # Static assets (images, favicon, etc.)
-├── src/                # Source files
-│   ├── components/     # Reusable React UI components
-│   └── pages/          # Application routes and page views
-├── .oxlintrc.json      # Oxlint configuration
+├── backend/            # Backend server components and API logic
+├── public/             # Static assets (images, icons, etc.)
+├── src/                # Frontend source code
+│   ├── components/     # Reusable React UI components (Navbar, Footer, etc.)
+│   └── pages/          # Application routes and page views (Home, Contact, etc.)
+├── .oxlintrc.json      # Oxlint configuration file
 ├── eslint.config.mjs   # ESLint configuration
 ├── next.config.ts      # Next.js configuration
-├── vite.config.js      # Vite build setup
-├── package.json        # Dependencies and scripts
+├── vite.config.js      # Vite build configuration
+├── package.json        # Project dependencies and npm scripts
 └── tsconfig.json       # TypeScript configuration
-
-
 
 🛠️ Tech Stack
 Frontend Frameworks: React, Next.js, Vite
 
 Styling: Tailwind CSS, PostCSS
 
-Linting & Formatting: Oxlint, ESLint
+Backend: Java Spring Boot / Node.js backend integration
 
-Language: TypeScript, JavaScript
+Linting & Code Quality: Oxlint, ESLint
 
+Languages: JavaScript, TypeScript, HTML
 
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
-
-📦 Getting Started
+📦Getting Started
 Prerequisites
-Ensure you have Node.js installed (v18 or higher recommended).
+Ensure you have Node.js (v18 or higher recommended) installed on your system.
 
-Installation
+Installation & Setup
 Clone the repository:
 
 Bash
@@ -72,16 +53,17 @@ Install dependencies:
 
 Bash
 npm install
-Development Scripts
-Run Development Server (Vite):
+
+🚀 Development Scripts
+Run the development server via Vite:
 
 Bash
 npm run dev
-Build Production Assets:
+Build production-ready assets:
 
 Bash
 npm run build
-Lint Codebase:
+Run static code analysis and linting:
 
 Bash
 npx oxlint
