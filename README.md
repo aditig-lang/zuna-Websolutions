@@ -16,7 +16,6 @@
 ```text
 zuna-Websolutions/
 ├── .next/              # Next.js build output
-├── backend/            # Backend server components and API logic
 ├── public/             # Static assets (images, icons, etc.)
 ├── src/                # Frontend source code
 │   ├── components/     # Reusable React UI components (Navbar, Footer, etc.)
